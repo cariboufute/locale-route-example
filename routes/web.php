@@ -11,5 +11,7 @@
 |
  */
 
-Route::get('/', 'ViewController@index');
-Route::get('/locale', 'ViewController@locale');
+/*Route::get('/fr', 'ViewController@index');
+Route::get('/en', 'ViewController@index');*/
+
+LocaleRoute::get(['fr' => 'locale', 'en' => 'locale'], 'ViewController@locale');
