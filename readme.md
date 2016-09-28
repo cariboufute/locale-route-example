@@ -1,27 +1,37 @@
-# Laravel PHP Framework
+# locale-route-example
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE.md)
+[![Build Status][ico-travis]][link-travis]
+[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
+[![Quality Score][ico-code-quality]][link-code-quality]
+[![Total Downloads][ico-downloads]][link-downloads]
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+LocaleRouteExample is an application for testing the (cariboufute/locale-route package)[locale-route] to make testable localized routes with Laravel 5. Please check (this link)[locale-route] for more details about the package.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
+## Credits
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+- [Frédéric Chiasson][link-author]
+- [All Contributors][link-contributors]
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[locale-route]: https://github.com/cariboufute/locale-route
+
+[ico-version]: https://img.shields.io/packagist/v/cariboufute/locale-route.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/cariboufute/locale-route/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/cariboufute/locale-route.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/cariboufute/locale-route.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/cariboufute/locale-route.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/cariboufute/locale-route
+[link-travis]: https://travis-ci.org/cariboufute/locale-route
+[link-scrutinizer]: https://scrutinizer-ci.com/g/cariboufute/locale-route/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/cariboufute/locale-route
+[link-downloads]: https://packagist.org/packages/cariboufute/locale-route
+[link-author]: https://github.com/cariboufute
+[link-contributors]: ../../contributors
