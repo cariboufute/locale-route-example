@@ -20,4 +20,9 @@ class ViewController extends Controller
     {
         return App::getLocale() . '.localeroute';
     }
+
+    public function test()
+    {
+        return App::getLocale();
+    }
 }

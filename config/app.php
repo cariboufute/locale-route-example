@@ -166,7 +166,6 @@ return [
         /*
          * Package Service Providers...
          */
-        JeroenG\Packager\PackagerServiceProvider::class,
         CaribouFute\LocaleRoute\LocaleRouteServiceProvider::class,
         //
 
