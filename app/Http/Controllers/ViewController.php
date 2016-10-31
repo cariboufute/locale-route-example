@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App;
-use CaribouFute\LocaleRoute\Session\Locale as SessionLocale;
 
 class ViewController extends Controller
 {
@@ -12,10 +11,13 @@ class ViewController extends Controller
         return view('welcome');
     }
 
-    public function locale(SessionLocale $locale)
+    public function locale()
     {
-        $locale->set('fr');
-
         return App::getLocale();
+    }
+
+    public function localeRoute()
+    {
+        return App::getLocale() . '.localeroute';
     }
 }
