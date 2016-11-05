@@ -4,9 +4,11 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.6.4",
-        "laravel/framework": "5.3.*"
+        "laravel/framework": "5.3.*",
+        "cariboufute/locale-route": "*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -20,7 +22,6 @@
             "database"
         ],
         "psr-4": {
-            "CaribouFute\\LocaleRoute\\": "packages/cariboufute/locale-route/src",
             "App\\": "app/"
         }
     },
