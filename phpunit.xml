@@ -13,8 +13,8 @@
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
 
-        <testsuite name="Application Test Suite">
-            <directory suffix="Test.php">./vendor/cariboufute/locale-route/tests</directory>
+        <testsuite name="Package Test Suite">
+            <directory suffix="Test.php">./packages/tests</directory>
         </testsuite>
     </testsuites>
 

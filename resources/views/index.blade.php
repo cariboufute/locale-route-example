@@ -18,16 +18,16 @@
         </p>
 
         <p>
-            <a href="{{ locale_route('fr') }}">FR locale, current route</a>
+            <a href="{{ other_locale('fr') }}">FR locale, current route</a>
         </p>
 
         <p>
-            <a href="{{ locale_route('en') }}">EN locale, current route</a>
+            <a href="{{ other_locale('en') }}">EN locale, current route</a>
         </p>
 
 
         <p>
-            <a href="{{ locale_route(null, 'index') }}">Current locale, index route</a>
+            <a href="{{ other_route('index') }}">Current locale, index route</a>
         </p>
 
         <p>
@@ -40,7 +40,7 @@
 
 
         <p>
-            <a href="{{ locale_route(null, 'test2') }}">Current locale, test2 route</a>
+            <a href="{{ other_route('test2') }}">Current locale, test2 route</a>
         </p>
 
         <p>
