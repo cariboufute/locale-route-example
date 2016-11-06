@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3dd783ca3d6e4751dce9775101f05dac",
+    "hash": "a160443c07285439e5e34d4a085185cc",
     "content-hash": "2096b8aacb44a5b4c0ab9e358c239623",
     "packages": [
         {
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cariboufute/locale-route.git",
-                "reference": "944d594d244e948363d0c9f843aae44b9d59453e"
+                "reference": "c625fbdc42955e4aabd4070a0e56da9e6e3edf1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cariboufute/locale-route/zipball/944d594d244e948363d0c9f843aae44b9d59453e",
-                "reference": "944d594d244e948363d0c9f843aae44b9d59453e",
+                "url": "https://api.github.com/repos/cariboufute/locale-route/zipball/c625fbdc42955e4aabd4070a0e56da9e6e3edf1b",
+                "reference": "c625fbdc42955e4aabd4070a0e56da9e6e3edf1b",
                 "shasum": ""
             },
             "require": {
@@ -61,7 +61,7 @@
                 "cariboufute",
                 "locale-route"
             ],
-            "time": "2016-11-05 23:03:13"
+            "time": "2016-11-06 00:17:08"
         },
         {
             "name": "classpreloader/classpreloader",
