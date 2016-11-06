@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cariboufute/locale-route.git",
-                "reference": "f876a33a979315dae98a583e922ec978d2c7da65"
+                "reference": "00d33375d7f52d3f88501f9b48c93991de54c24b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cariboufute/locale-route/zipball/f876a33a979315dae98a583e922ec978d2c7da65",
-                "reference": "f876a33a979315dae98a583e922ec978d2c7da65",
+                "url": "https://api.github.com/repos/cariboufute/locale-route/zipball/00d33375d7f52d3f88501f9b48c93991de54c24b",
+                "reference": "00d33375d7f52d3f88501f9b48c93991de54c24b",
                 "shasum": ""
             },
             "require": {
@@ -61,7 +61,7 @@
                 "cariboufute",
                 "locale-route"
             ],
-            "time": "2016-11-06 02:39:43"
+            "time": "2016-11-06 04:03:41"
         },
         {
             "name": "classpreloader/classpreloader",
