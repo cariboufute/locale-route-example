@@ -12,13 +12,43 @@
     </head>
 
     <body>
-
         <p>
-            <a href="/fr">Route FR</a>
+            Current route: <strong>{{ Request::route()->getName() }}</strong><br/>
+            Current URL: <strong>{{ locale_route() }}</strong>
         </p>
 
         <p>
-            <a href="/en">Route EN</a>
+            <a href="{{ locale_route('fr') }}">FR locale, current route</a>
+        </p>
+
+        <p>
+            <a href="{{ locale_route('en') }}">EN locale, current route</a>
+        </p>
+
+
+        <p>
+            <a href="{{ locale_route(null, 'index') }}">Current locale, index route</a>
+        </p>
+
+        <p>
+            <a href="{{ locale_route('fr', 'index') }}">FR locale, index route</a>
+        </p>
+
+        <p>
+            <a href="{{ locale_route('en', 'index') }}">EN locale, index route</a>
+        </p>
+
+
+        <p>
+            <a href="{{ locale_route(null, 'test2') }}">Current locale, test2 route</a>
+        </p>
+
+        <p>
+            <a href="{{ locale_route('fr', 'test2') }}">FR locale, test2 route</a>
+        </p>
+
+        <p>
+            <a href="{{ locale_route('en', 'test2') }}">EN locale, test2 route</a>
         </p>
 
     </body>

@@ -12,5 +12,6 @@
  */
 
 LocaleRoute::getRoute('index', 'ViewController@index');
+LocaleRoute::getRoute('test2', 'ViewController@index');
 
 Route::get('testlocale', 'ViewController@test');
