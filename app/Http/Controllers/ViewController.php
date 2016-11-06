@@ -11,17 +11,7 @@ class ViewController extends Controller
         return view('index');
     }
 
-    public function locale()
-    {
-        return App::getLocale();
-    }
-
-    public function localeRoute()
-    {
-        return App::getLocale() . '.localeroute';
-    }
-
-    public function test()
+    public function testlocale()
     {
         return App::getLocale();
     }

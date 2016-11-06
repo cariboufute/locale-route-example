@@ -4,9 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3832734b7b7fb766bea43ce7f60e8ff3",
-    "content-hash": "85590f1bfaf7e9e0d87ca3e2c55be6b5",
+    "hash": "a160443c07285439e5e34d4a085185cc",
+    "content-hash": "2096b8aacb44a5b4c0ab9e358c239623",
     "packages": [
+        {
+            "name": "cariboufute/locale-route",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cariboufute/locale-route.git",
+                "reference": "f876a33a979315dae98a583e922ec978d2c7da65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cariboufute/locale-route/zipball/f876a33a979315dae98a583e922ec978d2c7da65",
+                "reference": "f876a33a979315dae98a583e922ec978d2c7da65",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.3.*",
+                "php": "~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0||~5.0",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "CaribouFute\\LocaleRoute\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frédéric Chiasson",
+                    "email": "frederic.chiasson@gmail.com",
+                    "homepage": "http://fredericchiasson.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A testable route package with localization for Laravel 5",
+            "homepage": "https://github.com/cariboufute/locale-route",
+            "keywords": [
+                "cariboufute",
+                "locale-route"
+            ],
+            "time": "2016-11-06 02:39:43"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "dev-master",
