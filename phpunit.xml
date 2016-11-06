@@ -14,7 +14,7 @@
         </testsuite>
 
         <testsuite name="Package Test Suite">
-            <directory suffix="Test.php">./packages/tests</directory>
+            <directory suffix="Test.php">./vendor/cariboufute/locale-route/tests</directory>
         </testsuite>
     </testsuites>
 
