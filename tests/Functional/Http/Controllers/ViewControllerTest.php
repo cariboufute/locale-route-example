@@ -61,4 +61,13 @@ class ViewControllerTest extends TestCase
         $response = $this->call('GET', locale_route('fr', 'en.index'));
         $this->assertResponseOk();
     }
+
+    public function testLocaleRouteWithUrlArray()
+    {
+        $response = $this->call('GET', 'fr/test2fr');
+        $this->assertResponseOk();
+
+        $response = $this->call('GET', 'en/test2en');
+        $this->assertResponseOk();
+    }
 }
