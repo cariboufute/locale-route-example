@@ -226,7 +226,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'LocaleRoute' => CaribouFute\LocaleRoute\Facades\LocaleRoute::class,
-        'LocaleUrl' => CaribouFute\LocaleRoute\Facades\LocaleUrl::class,
     ],
 
 ];
