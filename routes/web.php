@@ -12,7 +12,7 @@
  */
 
 Route::get('/', function () {
-    return redirect('/en');
+    return redirect('/' . Config::get('app.fallback_locale'));
 });
 
 LocaleRoute::get('index', 'ViewController@index');
