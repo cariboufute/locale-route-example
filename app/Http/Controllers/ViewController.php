@@ -15,4 +15,9 @@ class ViewController extends Controller
     {
         return App::getLocale();
     }
+
+    public function sub()
+    {
+        return 'sub_' . App::getLocale();
+    }
 }

@@ -19,3 +19,7 @@ LocaleRoute::get('index', 'ViewController@index');
 LocaleRoute::get('test2', 'ViewController@index', ['fr' => 'test2fr', 'en' => 'test2en']);
 
 Route::get('testlocale', 'ViewController@testlocale');
+
+LocaleRoute::group([], function () {
+    SubRoute::get('sub', 'ViewController@sub', ['fr' => 'sub_fr', 'en' => 'sub_en']);
+});
