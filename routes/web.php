@@ -20,6 +20,6 @@ LocaleRoute::get('test2', 'ViewController@index', ['fr' => 'test2fr', 'en' => 't
 
 Route::get('testlocale', 'ViewController@testlocale');
 
-LocaleRoute::group([], function () {
-    SubRoute::get('sub', 'ViewController@sub', ['fr' => 'sub_fr', 'en' => 'sub_en']);
+Route::group(['prefix' => 'group'], function () {
+    LocaleRoute::get('sub', 'ViewController@sub', ['fr' => 'sub_fr', 'en' => 'sub_en']);
 });
