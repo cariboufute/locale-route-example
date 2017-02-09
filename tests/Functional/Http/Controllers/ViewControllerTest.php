@@ -5,7 +5,7 @@ namespace Tests\Functional\Http\Controllers;
 use App;
 use Route;
 use Session;
-use TestCase;
+use Tests\TestCase;
 
 class ViewControllerTest extends TestCase
 {
@@ -18,56 +18,56 @@ class ViewControllerTest extends TestCase
     public function testPagesInBothLanguages()
     {
         $response = $this->call('GET', '/fr');
-        $this->assertResponseOk();
+        $response->assertStatus(200);
         $this->assertSame('fr', App::getLocale());
 
         $response = $this->call('GET', '/en');
-        $this->assertResponseOk();
+        $response->assertStatus(200);
         $this->assertSame('en', App::getLocale());
     }
 
     public function testRoutesInBothLanguages()
     {
         $response = $this->call('GET', route('fr.index'));
-        $this->assertResponseOk();
+        $response->assertStatus(200);
         $this->assertSame('fr', App::getLocale());
 
         $response = $this->call('GET', route('en.index'));
-        $this->assertResponseOk();
+        $response->assertStatus(200);
         $this->assertSame('en', App::getLocale());
     }
 
     public function testSetLocaleMiddleware()
     {
         $response = $this->call('GET', route('fr.index'));
-        $this->assertResponseOk();
+        $response->assertStatus(200);
         $this->assertSame('fr', App::getLocale());
 
         $response = $this->call('GET', '/testlocale');
-        $this->assertResponseOk();
+        $response->assertStatus(200);
         $this->assertSame('fr', App::getLocale());
 
         $response = $this->call('GET', route('en.index'));
-        $this->assertResponseOk();
+        $response->assertStatus(200);
         $this->assertSame('en', App::getLocale());
 
         $response = $this->call('GET', '/testlocale');
-        $this->assertResponseOk();
+        $response->assertStatus(200);
         $this->assertSame('en', App::getLocale());
     }
 
     public function testLocaleRoute()
     {
         $response = $this->call('GET', locale_route('fr', 'en.index'));
-        $this->assertResponseOk();
+        $response->assertStatus(200);
     }
 
     public function testLocaleRouteWithUrlArray()
     {
         $response = $this->call('GET', 'fr/test2fr');
-        $this->assertResponseOk();
+        $response->assertStatus(200);
 
         $response = $this->call('GET', 'en/test2en');
-        $this->assertResponseOk();
+        $response->assertStatus(200);
     }
 }
