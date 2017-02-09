@@ -11,11 +11,12 @@
 |
  */
 
+LocaleRoute::get('index', 'ViewController@index');
+
 Route::get('/', function () {
     return redirect('/' . Config::get('app.fallback_locale'));
 });
 
-LocaleRoute::get('index', 'ViewController@index');
 LocaleRoute::get('test2', 'ViewController@index', ['fr' => 'test2fr', 'en' => 'test2en']);
 
 Route::get('testlocale', 'ViewController@testlocale');
