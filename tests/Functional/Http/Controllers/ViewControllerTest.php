@@ -42,18 +42,23 @@ class ViewControllerTest extends TestCase
         $response = $this->call('GET', route('fr.index'));
         $response->assertStatus(200);
         $this->assertSame('fr', App::getLocale());
+        $this->assertSame('fr', session('locale'));
 
-        $response = $this->call('GET', '/testlocale');
+        $response = $this->call('GET', '/nolocale');
+        dd($response->getContent());
         $response->assertStatus(200);
         $this->assertSame('fr', App::getLocale());
+        $this->assertSame('fr', session('locale'));
 
         $response = $this->call('GET', route('en.index'));
         $response->assertStatus(200);
         $this->assertSame('en', App::getLocale());
+        $this->assertSame('en', session('locale'));
 
         $response = $this->call('GET', '/testlocale');
         $response->assertStatus(200);
         $this->assertSame('en', App::getLocale());
+        $this->assertSame('en', session('locale'));
     }
 
     public function testLocaleRoute()

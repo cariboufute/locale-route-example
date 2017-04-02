@@ -8,12 +8,18 @@ class ViewController extends Controller
 {
     public function index()
     {
-        return view('index');
+        return $this->indexPage();
     }
 
-    public function testlocale()
+    protected function indexPage()
     {
-        return App::getLocale();
+        $sessionLocale = session('locale');
+        return view('index', compact('sessionLocale'));
+    }
+
+    public function nolocale()
+    {
+        return $this->indexPage();
     }
 
     public function sub()

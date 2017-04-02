@@ -14,7 +14,9 @@
     <body>
         <p>
             Current route: <strong>{{ Request::route()->getName() }}</strong><br/>
-            Current URL: <strong>{{ locale_route() }}</strong>
+            Current URL: <strong>{{ locale_route() }}</strong><br/>
+            Current locale <em>(App::getLocale())</em>: <strong>{{ App::getLocale() }}</strong><br/>
+            Current session locale <em>(session('locale'))</em>: <strong>{{ $sessionLocale }}</strong>
         </p>
 
         <p>
@@ -49,6 +51,19 @@
 
         <p>
             <a href="{{ locale_route('en', 'test2') }}">EN locale, test2 route</a>
+        </p>
+
+
+        <p>
+            <a href="{{ other_route('nolocale') }}">Current locale, nolocale route</a>
+        </p>
+
+        <p>
+            <a href="{{ locale_route('fr', 'nolocale') }}">FR locale, nolocale route (no locale change expected)</a>
+        </p>
+
+        <p>
+            <a href="{{ locale_route('en', 'nolocale') }}">EN locale, nolocale route (no locale change expected)</a>
         </p>
 
     </body>

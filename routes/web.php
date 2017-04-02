@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 LocaleRoute::get('test2', 'ViewController@index', ['fr' => 'test2fr', 'en' => 'test2en']);
 
-Route::get('testlocale', 'ViewController@testlocale');
+Route::get('nolocale', ['as' => 'nolocale', 'uses' => 'ViewController@nolocale']);
 
 Route::group(['prefix' => 'group'], function () {
     LocaleRoute::get('sub', 'ViewController@sub', ['fr' => 'sub_fr', 'en' => 'sub_en']);
