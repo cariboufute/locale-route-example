@@ -45,7 +45,6 @@ class ViewControllerTest extends TestCase
         $this->assertSame('fr', session('locale'));
 
         $response = $this->call('GET', '/nolocale');
-        dd($response->getContent());
         $response->assertStatus(200);
         $this->assertSame('fr', App::getLocale());
         $this->assertSame('fr', session('locale'));
@@ -55,7 +54,7 @@ class ViewControllerTest extends TestCase
         $this->assertSame('en', App::getLocale());
         $this->assertSame('en', session('locale'));
 
-        $response = $this->call('GET', '/testlocale');
+        $response = $this->call('GET', '/nolocale');
         $response->assertStatus(200);
         $this->assertSame('en', App::getLocale());
         $this->assertSame('en', session('locale'));
