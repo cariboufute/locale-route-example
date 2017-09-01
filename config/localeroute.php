@@ -10,7 +10,7 @@ return [
 
     /**
      * Option to add '{locale}/' before given URIs.
-     * For LocaleRoute::get('route', ...):
+     * For LocaleRoute::get(['fr' => 'route']):
      * true     => '/fr/route'
      * false    => '/route'
      * Default is true.
