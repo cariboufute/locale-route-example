@@ -12,7 +12,6 @@ LocaleRouteExample is an application for testing the [cariboufute/locale-route p
 You can also check the [Laravel 5.1 version][locale-route-example-51] of this example application.
 
 
-
 ## Credits
 
 - [Frédéric Chiasson][link-author]

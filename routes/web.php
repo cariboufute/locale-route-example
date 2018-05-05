@@ -24,3 +24,5 @@ Route::get('nolocale', ['as' => 'nolocale', 'uses' => 'ViewController@nolocale']
 Route::group(['prefix' => 'group'], function () {
     LocaleRoute::get('sub', 'ViewController@sub', ['fr' => 'sub_fr', 'en' => 'sub_en']);
 });
+
+LocaleRoute::get('test3', 'ViewController@test3', ['fr' => 'test3fr/{id}', 'en' => 'test3en/{id}'])->where(['id' => '[1-3]']);

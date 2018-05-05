@@ -74,4 +74,16 @@ class ViewControllerTest extends TestCase
         $response = $this->call('GET', 'en/test2en');
         $response->assertStatus(200);
     }
+
+    public function testLocaleRouteWithTrailingWhere()
+    {
+        $response = $this->call('GET', 'fr/test3fr/1');
+        $response->assertStatus(200);
+
+        $response = $this->call('GET', 'en/test3en/1');
+        $response->assertStatus(200);
+
+        $response = $this->call('GET', 'en/test3en/4');
+        $response->assertStatus(404);
+    }
 }

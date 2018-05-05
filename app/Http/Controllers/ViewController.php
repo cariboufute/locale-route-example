@@ -26,4 +26,9 @@ class ViewController extends Controller
     {
         return 'sub_' . App::getLocale();
     }
+
+    public function test3($id)
+    {
+        return 'test3_' . App::getLocale() . ', id: ' . $id;
+    }
 }
