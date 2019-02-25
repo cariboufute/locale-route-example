@@ -20,7 +20,6 @@ LocaleRouteExample is an application for testing the [cariboufute/locale-route p
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [locale-route]: https://github.com/cariboufute/locale-route
-[locale-route-example-51]: https://github.com/cariboufute/locale-route-example-51
 
 [ico-version]: https://img.shields.io/packagist/v/cariboufute/locale-route.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
