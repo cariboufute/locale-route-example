@@ -9,8 +9,6 @@
 
 LocaleRouteExample is an application for testing the [cariboufute/locale-route package][locale-route] to make testable localized routes with Laravel 5. Please check [this link][locale-route] for more details about the package.
 
-You can also check the [Laravel 5.1 version][locale-route-example-51] of this example application.
-
 
 ## Credits
 
