@@ -3,13 +3,13 @@
 namespace Tests\Functional\Http\Controllers;
 
 use App;
-use Route;
-use Session;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 use Tests\TestCase;
 
 class ViewControllerTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         Session::start();
