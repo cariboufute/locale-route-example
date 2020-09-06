@@ -1,9 +1,8 @@
 <?php
 
-namespace Tests\Functional\Http\Controllers;
+namespace Tests\Feature\Http\Controllers;
 
-use App;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 use Tests\TestCase;
 
